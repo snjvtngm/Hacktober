@@ -17,8 +17,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Redux</h1>
+      <h1>React Redux Notes List</h1>
       <NewNoteInput addNote={onAddNote} />
+      <h2 className="st_title feedback-title">
+        <i className="uil uil-comment-info-alt"></i> Send Feedback
+      </h2>
       <hr />
       <ol>
         {notes.map((note) => {
