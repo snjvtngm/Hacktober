@@ -1,4 +1,4 @@
-import { Action } from "./actions";
+import { AddNoteAction } from "./actions";
 
 export interface NotesState {
   notes: string[];
@@ -10,7 +10,7 @@ const initialState = {
 
 export const notesReducer = (
   state: NotesState = initialState,
-  action: Action
+  action: AddNoteAction
 ) => {
   switch (action.type) {
     case "ADD_NOTE":
