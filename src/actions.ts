@@ -8,3 +8,14 @@ export type Action = {
     payload: note
   });
   
+
+  export type Action = {
+    type: "UPDATE_NOTE";
+    payload: string;
+  };
+  
+  export const updateNote = (note: string): Action => ({
+    type: "UPDATE_NOTE",
+    payload: note
+  });
+  
