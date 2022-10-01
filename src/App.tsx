@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>React Redux Typescript Notes</h1>
+      <h1>React Redux</h1>
       <NewNoteInput addNote={onAddNote} />
       <hr />
       <ol>
