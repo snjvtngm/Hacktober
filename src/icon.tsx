@@ -1,4 +1,8 @@
-export const Icon = ({count})=>{
+interface PropsType {
+  count: string | number
+}
+
+export const Icon: React.FC<PropsType> = ({count})=>{
     return (
         <li className="ui dropdown">
       <div className="option_links" title="Cart">
